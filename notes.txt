@@ -1,0 +1,19 @@
+REPL = Read, Eval, Print, Loop ## name of the python shell
+python3 ## command to lauch the python shell
+exit() ## get out of the python shell print() ## print syntax
+print() ## echo something
+1 + 4 ## performing some maths
+type() ## indicate type
+10 / 5 ## returns float
+10 // 5 ## returns integer
+my_var = 8 ## declare a variable
+print(int + int) ## add variables
+print(str + str) ## concatenates variables
+list = ['first', 'second', 'third'] ## declare a list
+print(list[0]) ## print first element of list
+list.pop(2) ## delete third element of list
+list.append('fourth') ## add element to a list
+dictionary = {'first': 'data1', 'second': 'data2', 'third': 'data3'} ## declare a dictionary
+print(dictionary['first']) ## print element named 'first' of dictionary
+del dictionary['first'] ## drop element named 'first' of dictionary
+dictionary['fourth'] = 'data4' ## add element to a dictionary
