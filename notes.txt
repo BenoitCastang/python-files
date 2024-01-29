@@ -17,3 +17,11 @@ dictionary = {'first': 'data1', 'second': 'data2', 'third': 'data3'} ## declare 
 print(dictionary['first']) ## print element named 'first' of dictionary
 del dictionary['first'] ## drop element named 'first' of dictionary
 dictionary['fourth'] = 'data4' ## add element to a dictionary
+'foo' + 6 ## operation impossible between two different data types
+str(5) ## make an integer a string
+int('5') ## make a string an integer
+print(str[0]) ## print first element of a string
+print(str[0:4]) ## print a range from first to fifth element
+str.upper() ## make a string uppercase
+str.lower() ## make a string lowercase
+print('bloc\nflop') ## print line return
