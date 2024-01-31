@@ -1,6 +1,9 @@
 REPL = Read, Eval, Print, Loop ## name of the python shell
 python3 ## command to lauch the python shell
 exit() ## get out of the python shell print() ## print syntax
+help() ## go to the python documentation
+python3 script.py ## lauch a non executable .py file
+./script.py ## lauch executable .py file with python3 if he has shebang #!/usr/bin/en python3 in the beginning
 print() ## echo something
 1 + 4 ## performing some maths
 type() ## indicate type
@@ -25,3 +28,18 @@ print(str[0:4]) ## print a range from first to fifth element
 str.upper() ## make a string uppercase
 str.lower() ## make a string lowercase
 print('bloc\nflop') ## print line return
+def additon(a, b):
+	return a + b
+addition(1, 2) ## basic function syntax
+local variable ## exist only in the contextual function
+global variable ## exist anywhere in the code
+global myvar ## declare a variable as global
+myvar = 5 ## setting his value
+input() ## return the string written by the user 
+input("Text") ## input with text before
+continue ## go back to while condition
+series of if ## go through all conditions whether they are verified or not -> if; if; if
+if, elif, else ## stops the if series if one condition is verified -> if || if || if
+if inside if ## verifies if previous condition is verified -> if && if && if
+tuple = ('flic', 'flac', floc') ## you can't change a tuple once it's declared, it's non mutable like dictionaries and lists, you must do del tuple before declaring a new one to modify it - but its faster, uses less memory and protects the array from unwanted change
+len(array) ## return number of elements of an array
