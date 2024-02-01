@@ -50,3 +50,9 @@ os.system('ls') ## perform system command
 os.system('ls', ' -la') ## won't work, takes only one argument
 subprocess.call(['ls', '-la']) ## perform system command
 'Bonjour {}'.format('Michael') ## replace {} as placeholders with arguments - works also with names and numbers
+exit(1) ## stop the program if some error is encountered, cause you dont want it to continue if this failed; return number in parenthesis
+try: ## get ready to catch exception
+	command ## perform the command
+except: ## catch all exceptions
+	command ## perform the command if an exception is catched
+except subprocess.CalledProcessError as e: ## catch exception of only one function
