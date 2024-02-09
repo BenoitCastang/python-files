@@ -4,6 +4,7 @@ exit() ## get out of the python shell print() ## print syntax
 help() ## go to the python documentation
 python3 script.py ## lauch a non executable .py file
 ./script.py ## lauch executable .py file with python3 if he has shebang #!/usr/bin/en python3 in the beginning
+print(sys.version) or print (sys.version_info) ## print python version in use
 
 $? Setting up virtual environment
 
@@ -16,9 +17,12 @@ deactivate ## deactivate virtual environment
 pip freeze > requirements.txt ## make a requirements.txt out of current dependencies
 pip install -r requirements.txr ## install dependencies of the requirements.txt in the current virtual environment ## -r stands for requirements path
 
+$? Basics
 
 print() ## echo something
+id() ## get the id of an object
 1 + 4 ## performing some maths
+1_500 + 2_500 ## python allows the user of underscores to make big numbers more readable
 type() ## indicate type
 10 / 5 ## returns float
 10 // 5 ## returns integer
@@ -36,10 +40,34 @@ dictionary['fourth'] = 'data4' ## add element to a dictionary
 'foo' + 6 ## operation impossible between two different data types
 str(5) ## make an integer a string
 int('5') ## make a string an integer
-print(str[0]) ## print first element of a string
-print(str[0:4]) ## print a range from first to fifth element
+int('1101', base=2) ## convert binary to integer
+
+$? Boolean numbers
+
+int(False) ## returns 0
+int(True) ## returns 1
+bool(1) ## evaluate in the boolean context, returns True
+bool(0) ## returns False
+bool(-42) ## returns True
+bool('blop') ## returns True
+bool and bool ## Both values must be true
+bool or bool ## either must be true
+not bool ## opposite of bool
+1 + True ## returns 2, because True equals 1
+1 + False ## returns 1, because False equals 0
+
+$? Strings
+
+str[start:stop:step]  ## string slicing rule
+str[0] ## access first element of a string
+str[1:4] ## access a range from second to fourth element ## start is inclusive, stop in exclusive
+str[:4] ## from beginning to stop
+str[4:] ## from start to end
 str.upper() ## make a string uppercase
 str.lower() ## make a string lowercase
+str.removeprefix('str') ## remove a string from beginning of line
+str.removesuffix('str') ## remove a string from end of line
+
 print('bloc\nflop') ## print line return
 def additon(a, b):
 	return a + b
