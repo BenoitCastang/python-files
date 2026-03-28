@@ -15,6 +15,7 @@ def multiplyInput():
             while i < howManyTimes :
                 print(num, 'x', i+1, '=', (i+1)*num)
                 i += 1
+
 def multiply(num = 5, howManyTimes = 10):
     '''Display num multiplication table from num*1 to num*howManyTimes.
     (howManyTimes >= 0)'''
